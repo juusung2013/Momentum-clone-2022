@@ -1,5 +1,17 @@
-//Boolean
+const mon = "mon";
+const tue = "tue";
+const wed = "wed";
+const thu = "thu";
+const fri = "fri";
+const sat = "sat";
+const sun = "sun";
 
-//null = 값이 없다는 걸 컴퓨터에게 알려주기 위해 의도적으로 채워진 값
-//undefined = 변수는 선언했지만 값을 할당하지 않음
-//ex) let a;
+const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
+
+// Get Item from Array
+console.log(daysOfWeek);
+
+// Add one more day to the array
+daysOfWeek.push("sun");
+
+console.log(daysOfWeek);
