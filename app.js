@@ -1,21 +1,22 @@
+//아주 아주 간단한 계산기
+
+function plus(firstNumber, SecondNumber) {
+  console.log(firstNumber + SecondNumber);
+}
+
+function divide(a, b) {
+  console.log(a / b);
+}
+plus(8, 60);
+divide(98, 20);
+
 const player = {
   name: "nico",
-  points: 10,
-  fat: true,
+  sayHello: function (otherPersonsName) {
+    console.log("hello! " + otherPersonsName + " nice to meet you");
+  },
 };
+
 console.log(player.name);
-console.log(player["name"]);
-
-console.log(player);
-player.fat = false;
-console.log(player);
-
-//const는 값을 변경할 수 없지만, object인 const 안의 무언가를 변경하는 것은 문제없음.
-//ex)
-
-//위와같이 선언했을 때
-//player = false; 불가능
-//player.fat = false; 가능
-
-player.lastName = "potato";
-console.log(player);
+player.sayHello("lynn");
+player.sayHello("nico");
