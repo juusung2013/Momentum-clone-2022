@@ -2,24 +2,24 @@
 
 const calculator = {
   add: function (a, b) {
-    console.log(a + b);
+    return a + b;
   },
   min: function (a, b) {
-    console.log(a - b);
-  },
-  div: function (a, b) {
-    console.log(a / b);
+    return a - b;
   },
   mul: function (a, b) {
-    console.log(a * b);
+    return a * b;
+  },
+  div: function (a, b) {
+    return a / b;
   },
   squ: function (a, b) {
-    console.log(a ** b);
+    return a ** b;
   },
 };
 
-calculator.add(50, 5);
-calculator.min(50, 5);
-calculator.div(50, 5);
-calculator.mul(50, 5);
-calculator.squ(50, 5);
+const addResult = calculator.add(2, 3);
+const minResult = calculator.min(addResult, 10);
+const mulResult = calculator.mul(10, minResult);
+const divResult = calculator.div(mulResult, addResult);
+const squResult = calculator.squ(divResult, minResult);
