@@ -1,15 +1,12 @@
-const age = parseInt(prompt("How old are you?"));
+const title = document.querySelector("div.hello:first-child h1");
 
-if (isNaN(age) || age < 0) {
-  console.log("Please write a real positive number");
-} else if (age < 18) {
-  console.log("You are too young");
-} else if (age >= 18 && age <= 50) {
-  console.log("You can drink");
-} else if (age > 50 && age <= 80) {
-  console.log("You should exercise");
-} else if (age === 100) {
-  console.log("Wow you are wise");
-} else if (age > 80) {
-  console.log("You can do whatever you want");
+function handleTitleClick() {
+  //JS에서 CSS 내용 수정 가능
+  title.style.color = "blue";
+
+  console.log("title was clicked!");
 }
+
+//클릭(event) 하면 handleTitleClick 함수 실행
+//handleTitleClick() 괄호 붙여버리면 클릭 상관없이 바로 실행됨
+title.addEventListener("click", handleTitleClick);
