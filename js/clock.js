@@ -9,5 +9,6 @@ function getClock() {
   clock.innerText = `${hours}:${minutes}:${seconds}`;
 }
 
+//real time
 getClock();
 setInterval(getClock, 1000); //시간단위 = ms
