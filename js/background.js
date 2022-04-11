@@ -6,4 +6,4 @@ const bgImage = document.createElement("img");
 
 bgImage.src = `img/${chosenImage}`;
 
-document.body.appendChild(bgImage);
+document.body.appendChild(bgImage); //append = 맨 뒤, prepend = 맨 앞
